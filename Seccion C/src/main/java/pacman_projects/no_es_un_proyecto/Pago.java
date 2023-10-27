@@ -9,7 +9,7 @@ package pacman_projects.no_es_un_proyecto;
  *
  * @author USUARIO
  */
-public class Pago {
+public class Pago implements Pagable{
     public void realizarCobro(double monto){
         //carga el monto de compra al medio de pago
     }

@@ -10,13 +10,9 @@ import java.util.List;
  * @author USUARIO
  */
 public class Compra {
-    private Pago pago;
-    private PagoPaypal pagopaypal;
+    private Pagable pago;
     private List articulos;
-    public Compra(Pago pago){
-        
-    }
-    public Compra(PagoPaypal pagopaypal){
+    public Compra(Pagable pago){
         
     }
     public void agrgarArticulo(Articulo articulo){

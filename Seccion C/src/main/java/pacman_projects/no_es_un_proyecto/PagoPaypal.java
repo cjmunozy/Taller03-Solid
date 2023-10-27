@@ -9,13 +9,17 @@ package pacman_projects.no_es_un_proyecto;
  *
  * @author USUARIO
  */
-public class PagoPaypal extends Pago{
+public class PagoPaypal extends Pago implements Pagable{
     private boolean loggedIn;
     
+    private void iniciarSesion(){
+        
+    }
     @Override
     public void realizarCobro(double monto){
         if(!loggedIn){
-            return;
+            
+            iniciarSesion();
         }
         //cargar el monto de compra al medio de pago
     }

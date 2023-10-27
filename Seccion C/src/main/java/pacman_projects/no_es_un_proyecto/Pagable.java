@@ -9,15 +9,9 @@ package pacman_projects.no_es_un_proyecto;
  *
  * @author USUARIO
  */
-public class Notificacion {
-    private int tipoNotificacion;
+public interface Pagable {
+    void realizarCobro(double monto);
+    //carga el monto de compra al medio de pago
     
-    public void notificar(){
-        if (tipoNotificacion==1){
-        //enviarEmail();
-        }
-        else{
-        //enviarSMS(); 
-        }
-    }
+    
 }
